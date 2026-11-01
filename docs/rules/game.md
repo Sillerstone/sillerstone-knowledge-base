@@ -1,149 +1,33 @@
+<script setup>
+import Rule from "../../components/Rule.vue";
+</script>
 # Правила игры
 
-> **2.1** Non-RP - ситуация, в которой игрок не отыгрывает свою роль. То, что невозможно, нелогично в реальной жизни
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 1д
-
-> **2.2** Fear RP - не отыгровка инстинкта самосохранения и страха
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 1д
-
-> **2.3** Free Kill - убийство от 1 до 2 игроков без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 1д
-
-> **2.4** RDM (Random Death Match) - убийство от 3 игроков без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> *По решению высшей администрации*
-
-> **2.5** NLR (New Life Rule) - правило новой жизни. Если вы погибли на РП, то вы не имеете права дальше отыгрывать умершего РП персонажа и должны зарегистрировать нового
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Кик с игрового сервера</span>
-
-> **2.6** Chat Rule - правила поведения в текстовом и голосовом чате. Регулируются [правилами общения](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-obsheniya). Всю информацию о форматировании текста в игровом чате можно найти [здесь](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-igry/razmetka-chata). Запрещается использовать SoundPad без разрешения ответственного за запуск или высшей администрации
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч
-
-> **2.7** Grenade Rule - во время нападения / защиты можно использовать только одну гранату
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.8** Armed RP - запрещено в открытую носить / доставать любое оружие, не имея на это уважительной причины. Разрешено доставать оружие на улицах если вы нападаете / защищаете территорию в количестве 2 и более игроков. Исключение: Госслужащие
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч
-
-> **2.9** Free Wanted - внесение игрока в розыск / вынесение игрока из розыска без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с профессии</span> & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.10** Free Arrest - арест / освобождение игрока без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с профессии</span> & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.11** Free Bill - выставление счетов игроку / снятие счетов игрока без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с профессии</span> & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.12** Non-RP Time - объявляется ответственным за запуск или высшей администрацией на сервере. Во время Non-RP Time РП не отыгрывается. Запрещено нарушать правила во время Non-RP Time.
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> *См. наказание за нарушенное правило*
-
-> **2.13** SRS (Short Range Sniper) - использование снайперской винтовки вблизи
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.14** Уход от рп ситуации - запрещено выходить с сервера во время рп процесса / рп действия или как-либо избегать рп.
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч
-
-> **2.15** Оскорбления разрешены только в РП процессе
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> См. [1.1](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-obsheniya)
-
-> **2.16** Crime Rule - правило, регулирующее периодичность РП действий криминала. Все планируемые преступления игрок должен согласовывать с администрацией проекта (от @「⚙+」Администратор и выше)
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с профессии</span> & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.17** Cheat Rule - использование любого ПО, препятствующего честной игре (дающего преимущество перед другими игроками), запрещено
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> *По решению высшей администрации*
-
-> **2.18** Weapon Use Rule - запрещено использовать оружие криминала, не являясь им (оружие криминала помечено в [дискорд](https://sillerstone.gitbook.io/sillerstone/ssylki) в названии роли эмодзи черепа (💀)). Если вы инициатор перестрелки, вам необходимо совершить как минимум 2 отыгровки для того, чтобы достать любое оружие
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.19** Weapon Transfer Rule - запрещено передавать оружие на запуске игрового сервера без его передачи в инвентарь другого игрока в [дискорд](https://sillerstone.gitbook.io/sillerstone/ssylki)
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.20** Power Gaming - переоценка возможностей РП персонажа
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.21** Meta Gaming - информация, полученная не РП путём, которая была как-либо использована в РП процессе
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч & <span style="color:var(--c-notification);">Откат</span>
-
-> **2.22** Bunnyhop (BH) - “распрыжка” (bunnyhop) запрещена
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч
-
-> **2.23** Unfair Play - запрещено отыгрывать/склонять РП в свою пользу, а также намеренно “сливать” РП персонажей
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 1д
-
-> **2.24** Thief Rule - запрещено забирать у RP персонажа более одного предмета за одну РП ситуацию
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 12ч
-
-> **2.25** Помеха - запрещено намеренно мешать персоналу проводить запуск игрового сервера
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 2д
-
-> **2.26** Free Dismissal/Demotion - запрещено увольнять/понижать игрока без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с лидера фракции</span>
-
-> **2.27** Fun Gaming - Fun Gaming запрещён
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> Блокировка 1д
-
-> **2.28** Free Search - обыск игрока без весомой РП причины
->
-> <span style="color:var(--c-warning);">**Наказание:**</span> Варн 4д & <span style="color:var(--c-notification);">Откат</span>
->
-> <span style="color:var(--c-danger);">**Злоупотребление:**</span> <span style="color:var(--c-notification);">Снятие с профессии</span> & <span style="color:var(--c-notification);">Откат</span>
+<Rule clause="2.1" rule="Non-RP - ситуация, в которой игрок не отыгрывает свою роль. То, что невозможно, нелогично в реальной жизни" punishment="Варн 4д" abuse="Блокировка 1д" />
+<Rule clause="2.2" rule="Fear RP - не отыгровка инстинкта самосохранения и страха" punishment="Варн 4д" abuse="Блокировка 1д" />
+<Rule clause="2.3" rule="Free Kill - убийство от 1 до 2 игроков без весомой РП причины" punishment="Варн 4д" abuse="Блокировка 1д" />
+<Rule clause="2.4" rule="RDM (Random Death Match) - убийство от 3 игроков без весомой РП причины" punishment="*По решению высшей администрации*" />
+<Rule clause="2.5" rule="NLR (New Life Rule) - правило новой жизни. Если вы погибли на РП, то вы не имеете права дальше отыгрывать умершего РП персонажа и должны зарегистрировать нового" punishment="Варн 4д & Кик с игрового сервера" />
+<Rule clause="2.6" rule="Chat Rule - правила поведения в текстовом и голосовом чате. Регулируются [правилами общения](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-obsheniya). Всю информацию о форматировании текста в игровом чате можно найти [здесь](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-igry/razmetka-chata). Запрещается использовать SoundPad без разрешения ответственного за запуск или высшей администрации" punishment="Варн 4д" abuse="Блокировка 12ч" />
+<Rule clause="2.7" rule="Grenade Rule - во время нападения / защиты можно использовать только одну гранату" punishment="Варн 4д & Откат" />
+<Rule clause="2.8" rule="Armed RP - запрещено в открытую носить / доставать любое оружие, не имея на это уважительной причины. Разрешено доставать оружие на улицах если вы нападаете / защищаете территорию в количестве 2 и более игроков. Исключение: Госслужащие" punishment="Варн 4д" abuse="Блокировка 12ч" />
+<Rule clause="2.9" rule="Free Wanted - внесение игрока в розыск / вынесение игрока из розыска без весомой РП причины" punishment="Варн 4д & Откат" abuse="Снятие с профессии & Откат" />
+<Rule clause="2.10" rule="Free Arrest - арест / освобождение игрока без весомой РП причины" punishment="Варн 4д & Откат" abuse="Снятие с профессии & Откат" />
+<Rule clause="2.11" rule="Free Bill - выставление счетов игроку / снятие счетов игрока без весомой РП причины" punishment="Варн 4д & Откат" abuse="Снятие с профессии & Откат" />
+<Rule clause="2.12" rule="Non-RP Time - объявляется ответственным за запуск или высшей администрацией на сервере. Во время Non-RP Time РП не отыгрывается. Запрещено нарушать правила во время Non-RP Time." punishment="См. наказание за нарушенное правило" />
+<Rule clause="2.13" rule="SRS (Short Range Sniper) - использование снайперской винтовки вблизи" punishment="Варн 4д & Откат" />
+<Rule clause="2.14" rule="Уход от рп ситуации - запрещено выходить с сервера во время рп процесса / рп действия или как-либо избегать рп." punishment="Варн 4д" abuse="Блокировка 12ч" />
+<Rule clause="2.15" rule="Оскорбления разрешены только в РП процессе" punishment="См. [1.1](https://sillerstone.gitbook.io/sillerstone/pravila/pravila-obsheniya)" />
+<Rule clause="2.16" rule="Crime Rule - правило, регулирующее периодичность РП действий криминала. Все планируемые преступления игрок должен согласовывать с администрацией проекта (от @「⚙+」Администратор и выше)" punishment="Откат" abuse="Снятие с профессии & Откат" />
+<Rule clause="2.17" rule="Cheat Rule - использование любого ПО, препятствующего честной игре (дающего преимущество перед другими игроками), запрещено" punishment="*По решению высшей администрации*" />
+<Rule clause="2.18" rule="Weapon Use Rule - запрещено использовать оружие криминала, не являясь им (оружие криминала помечено в [дискорд](https://sillerstone.gitbook.io/sillerstone/ssylki) в названии роли эмодзи черепа (💀)). Если вы инициатор перестрелки, вам необходимо совершить как минимум 2 отыгровки для того, чтобы достать любое оружие" punishment="Варн 4д & Откат" />
+<Rule clause="2.19" rule="Weapon Transfer Rule - запрещено передавать оружие на запуске игрового сервера без его передачи в инвентарь другого игрока в [дискорд](https://sillerstone.gitbook.io/sillerstone/ssylki)" punishment="Варн 4д & Откат" />
+<Rule clause="2.20" rule="Power Gaming - переоценка возможностей РП персонажа" punishment="Варн 4д & Откат" />
+<Rule clause="2.21" rule="Meta Gaming - информация, полученная не РП путём, которая была как-либо использована в РП процессе" punishment="Варн 4д & Откат" abuse="Блокировка 12ч & Откат" />
+<Rule clause="2.22" rule="Bunnyhop (BH) - “распрыжка” (bunnyhop) запрещена" punishment="Варн 4д" abuse="Блокировка 12ч" />
+<Rule clause="2.23" rule="Unfair Play - запрещено отыгрывать/склонять РП в свою пользу, а также намеренно “сливать” РП персонажей" punishment="Варн 4д" abuse="Блокировка 1д" />
+<Rule clause="2.24" rule="Thief Rule - запрещено забирать у RP персонажа более одного предмета за одну РП ситуацию" punishment="Варн 4д" abuse="Блокировка 12ч" />
+<Rule clause="2.25" rule="Помеха - запрещено намеренно мешать персоналу проводить запуск игрового сервера" punishment="Варн 4д" abuse="Блокировка 2д" />
+<Rule clause="2.26" rule="Free Dismissal/Demotion - запрещено увольнять/понижать игрока без весомой РП причины" punishment="Варн 4д" abuse="Снятие с лидера фракции" />
+<Rule clause="2.27" rule="Fun Gaming - Fun Gaming запрещён" punishment="Варн 4д" abuse="Блокировка 1д" />
+<Rule clause="2.28" rule="Free Search - обыск игрока без весомой РП причины" punishment="Варн 4д & Откат" abuse="Снятие с профессии & Откат" />

@@ -8,9 +8,9 @@
 
 **Опасность локации: <span style="color: var(--c-success);">Безопасная</span>**
 
-![](public/about-map/centre-1.png)
+![](/about-map/centre-1.png)
 
-![](public/about-map/centre-2.png)
+![](/about-map/centre-2.png)
 :::
 
 ::: details Локация "Пляж"
@@ -22,9 +22,9 @@
 
 **Опасность локации: <span style="color: var(--c-warning);">Средняя</span>**
 
-![](public/about-map/beach-1.png)
+![](/about-map/beach-1.png)
 
-![](public/about-map/beach-2.png)
+![](/about-map/beach-2.png)
 :::
 
 ::: details Локация "Гетто"
@@ -35,11 +35,11 @@
 
 **Опасность локации: <span style="color: var(--c-danger);">Высокая</span>**
 
-![](public/about-map/ghetto-1.png)
+![](/about-map/ghetto-1.png)
 
-![](public/about-map/ghetto-2.png)
+![](/about-map/ghetto-2.png)
 
-![](public/about-map/ghetto-3.png)
+![](/about-map/ghetto-3.png)
 :::
 
 ::: details Локация "Бизнесы"
@@ -51,13 +51,13 @@
 
 **Опасность локации: <span style="color: var(--c-notification);">Низкая</span>**
 
-![](public/about-map/businesses-1.png)
+![](/about-map/businesses-1.png)
 
-![](public/about-map/businesses-2.png)
+![](/about-map/businesses-2.png)
 
-![](public/about-map/businesses-3.png)
+![](/about-map/businesses-3.png)
 
-![](public/about-map/businesses-4.png)
+![](/about-map/businesses-4.png)
 :::
 
 ::: details Локация "Больница"
@@ -68,9 +68,9 @@
 
 **Опасность локации: <span style="color: var(--c-notification);">Низкая</span>**
 
-![](public/about-map/hospital-1.png)
+![](/about-map/hospital-1.png)
 
-![](public/about-map/hospital-2.png)
+![](/about-map/hospital-2.png)
 :::
 
 ::: details Локация "Инфраструктура"
@@ -81,13 +81,13 @@
 
 **Опасность локации: <span style="color: var(--c-notification);">Низкая</span>**
 
-![](public/about-map/infrastructure-1.png)
+![](/about-map/infrastructure-1.png)
 
-![](public/about-map/infrastructure-2.png)
+![](/about-map/infrastructure-2.png)
 
-![](public/about-map/infrastructure-3.png)
+![](/about-map/infrastructure-3.png)
 
-![](public/about-map/infrastructure-4.png)
+![](/about-map/infrastructure-4.png)
 :::
 
 ::: details Локация "Пригород"
@@ -98,13 +98,13 @@
 
 **Опасность локации: <span style="color: var(--c-warning);">Средняя</span>**
 
-![](public/about-map/suburb-1.png)
+![](/about-map/suburb-1.png)
 
-![](public/about-map/suburb-2.png)
+![](/about-map/suburb-2.png)
 
-![](public/about-map/suburb-3.png)
+![](/about-map/suburb-3.png)
 
-![](public/about-map/suburb-4.png)
+![](/about-map/suburb-4.png)
 :::
 
 ::: details Локация "Деловая"
@@ -115,7 +115,7 @@
 
 **Опасность локации: <span style="color: var(--c-notification);">Низкая</span>**
 
-![](public/about-map/biz-1.png)
+![](/about-map/biz-1.png)
 
-![](public/about-map/biz-2.png)
+![](/about-map/biz-2.png)
 :::

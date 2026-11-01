@@ -1,10 +1,11 @@
 import {defineConfig} from "vitepress"
 
 // https://vitepress.dev/reference/site-config
+const URL_BASE = "/sillerstone-knowledge-base/";
 export default defineConfig({
     lang: "ru-RU",
-    head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
-    base: "/sillerstone-knowledge-base/",
+    head: [['link', { rel: 'icon', href: `${URL_BASE}favicon.ico` }]],
+    base: URL_BASE,
     title: "Sillerstone",
     description: "База знаний проекта Sillerstone",
     themeConfig: {
@@ -116,7 +117,7 @@ export default defineConfig({
 
     markdown: {
         image: {
-            lazyLoading: true
+            lazyLoad: true
         },
         container: {
             tipLabel: "Совет",
