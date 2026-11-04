@@ -1,15 +1,14 @@
 import {defineConfig} from "vitepress"
 
-// https://vitepress.dev/reference/site-config
-const URL_BASE = "/sillerstone-knowledge-base/";
+const URL_BASE = "/docs/";
 export default defineConfig({
     lang: "ru-RU",
     head: [['link', { rel: 'icon', href: `${URL_BASE}favicon.ico` }]],
     base: URL_BASE,
     title: "Sillerstone",
     description: "База знаний проекта Sillerstone",
+    cleanUrls: true,
     themeConfig: {
-        // https://vitepress.dev/reference/default-theme-config
         logo: "/logo.png",
 
         search: {
@@ -45,14 +44,14 @@ export default defineConfig({
 
         nav: [
             {text: "Главная", link: "/"},
-            {text: "Правила", link: "/rules/info"}
+            {text: "Правила", link: "/rules/general"}
         ],
 
         sidebar: [
             {
                 text: "Правила",
-                link: "/rules/info",
                 items: [
+                    {text: "Общие правила", link: "/rules/general"},
                     {text: "Правила общения", link: "/rules/chatting"},
                     {
                         text: "Правила игры", link: "/rules/game",
@@ -72,8 +71,8 @@ export default defineConfig({
             },
             {
                 text: "Донат",
-                link: "/donate/info",
                 items: [
+                    {text: "Важная информация", link: "/donate/info"},
                     {text: "Подписка Stelee", link: "/donate/stelee-sub"},
                     {text: "Пользовательская роль", link: "/donate/custom-role"},
                     {text: "Sawn-Off", link: "/donate/sawn-off"},
@@ -86,6 +85,14 @@ export default defineConfig({
                 text: "Персоналу",
                 items: [
                     {text: "Должности", link: "/staff/ranks"},
+                ]
+            },
+            {
+                text: "Ссылки",
+                items: [
+                    {text: "Discord", link: "/links/discord"},
+                    {text: "Telegram", link: "/links/telegram"},
+                    {text: "YouTube", link: "/links/youtube"},
                 ]
             }
         ],

@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -12,13 +11,13 @@ hero:
   actions:
     - theme: brand
       text: Правила
-      link: /rules/info
+      link: /rules/general
     - theme: alt
-      text: Discord
-      link: https://discord.com/invite/7qg8VrFEvH
+      text: Лор
+      link: /lore
     - theme: alt
-      text: Telegram
-      link: https://t.me/sillerstone
+      text: О карте
+      link: /about-map
 
 features:
   - title: GoreBox
@@ -32,7 +31,7 @@ features:
     details: Мы проводим отыгровки RP по разным тематикам. Основная - городская жизнь. Уровень RP проекта - Medium (средний)
   - title: Регистрация
     icon: 📄
-    details: После прохождения регистрации в дискорд вам откроются все остальные каналы сервера. Не забудьте прочитать правила!
+    details: После прохождения регистрации в Discord вам откроются все остальные каналы сервера. Не забудьте прочитать правила!
 ---
 
 <script setup>
@@ -40,7 +39,7 @@ import { VPTeamMembers } from "vitepress/theme";
 
 const members = [
     {
-        avatar: "https://i.imgur.com/31r6Sma.png",
+        avatar: "team/votond.png",
         name: "Votond",
         title: "Владелец проекта",
         links: [

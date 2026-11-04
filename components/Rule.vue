@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {MARKDOWN_IT} from "../state";
+import {MARKDOWN_IT} from "../exports";
 
 const props = defineProps<{ clause: string, rule: string, punishment?: string, abuse?: string }>();
 const rule = MARKDOWN_IT.render(props.rule).replaceAll(/<\/?p>/g, "");
@@ -14,8 +14,8 @@ if (props.abuse) {
 </script>
 
 <template>
-  <blockquote>
-    <p><strong>{{ clause }}</strong> <span v-html="rule"></span></p>
+  <blockquote :id="clause">
+    <p> <Badge type="info" :text="clause"/> <span v-html="rule"></span></p>
     <p v-if="punishment"><span class="punishment"><strong>Наказание:</strong></span> <span v-html="punishment"></span></p>
     <p v-if="abuse"><span class="abuse"><strong>Злоупотребление:</strong></span> <span v-html="abuse"></span></p>
   </blockquote>
