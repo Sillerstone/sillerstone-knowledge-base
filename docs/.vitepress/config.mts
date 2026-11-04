@@ -1,6 +1,6 @@
 import {defineConfig} from "vitepress"
 
-const URL_BASE = "/docs/";
+const URL_BASE = "/sillerstone-knowledge-base/";
 export default defineConfig({
     lang: "ru-RU",
     head: [['link', { rel: 'icon', href: `${URL_BASE}favicon.ico` }]],
